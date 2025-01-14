@@ -12,10 +12,14 @@
   src: url("/fonts/Poppins-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/fonts/Poppins-Medium.ttf");
+}
 
 @layer base{
   body{
-    @apply bg-background text-text text-sm
+    @apply bg-background text-text text-sm font-poppins
   }
 
   button{

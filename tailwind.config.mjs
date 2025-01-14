@@ -22,6 +22,7 @@ export default {
       fontFamily:{
         jsMath: ['jsMath-cmr10', 'serif'],
         poppins: ["Poppins-Regular, sans-serif"],
+        poppinsmed: ["Poppins-Medium, sans-serif"],
       }
     },
   },
