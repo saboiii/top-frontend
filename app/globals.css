@@ -21,10 +21,14 @@
   body{
     @apply bg-background text-text text-sm font-poppins
   }
-
-  button{
-    @apply uppercase text-background bg-text text-sm font-poppins pl-4 pr-3 py-2
+  
+  h1{
+    @apply text-4xl md:text-[64px] font-poppinsmed uppercase
   }
+}
+
+.button1{
+  @apply uppercase text-background bg-text text-sm font-poppins pl-4 pr-3 py-2
 }
 
 .title {
@@ -33,4 +37,35 @@
 
 .navbaritem{
   @apply font-poppins text-sm
+}
+
+.sidebaritem{
+  @apply font-poppinsmed text-sm
+}
+.display{
+  @apply h-full w-[100vw] relative flex gap-[2vw] p-[2vw] overflow-hidden;
+}
+
+.column{
+  @apply relative h-[100vh] w-[25%] flex flex-col gap-[2vw];
+}
+
+.column:nth-of-type(1) {
+  @apply -top-[80%];
+}
+
+.column:nth-of-type(2) {
+  @apply -top-[95%];
+}
+
+.column:nth-of-type(3) {
+  @apply -top-[115%];
+}
+
+.column:nth-of-type(4) {
+  @apply -top-[95%];
+}
+
+.column:nth-of-type(5) {
+  @apply -top-[80%];
 }

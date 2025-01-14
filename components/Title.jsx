@@ -9,7 +9,7 @@ function Title() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Ut vulputate mauris sed quam tempus scelerisque.
       </div>
-      <button className='flex'>
+      <button className='flex button1'>
         Button
         <BiSolidChevronRight size={20} className='ml-2 inline'/>
       </button>
