@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "jsMath-cmr10";
+  src: url("/fonts/jsMath-cmr10.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+
+@layer base{
+  body{
+    @apply bg-background text-text text-sm
+  }
+
+  button{
+    @apply uppercase text-background bg-text text-sm font-poppins pl-4 pr-3 py-2
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.title {
+  @apply font-jsMath text-[100px] leading-[43px] md:text-[200px] md:leading-[85px]
+}
+
+.navbaritem{
+  @apply font-poppins text-sm
 }
