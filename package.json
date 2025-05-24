@@ -2,6 +2,7 @@
   "name": "top-frontend",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +11,10 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "framer-motion": "^11.18.0",
+    "grammy": "^1.34.1",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

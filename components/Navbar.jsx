@@ -8,7 +8,6 @@ function Navbar() {
 
   function handleMenu() {
     setSideOpen(!sideOpen);
-    console.log("side menu is:", sideOpen);
   }
 
   return (
