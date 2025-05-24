@@ -5,8 +5,7 @@ import { validateInputs, validateIndices } from './input_validation.js';
 export const dynamic = 'force-dynamic';
 export const fetchCache = 'force-no-store';
 
-
-const token = '7617166943:AAE6NbrJZSwvJ_yZoXRJKqAJntLYIKWNbzk';
+const token = process.env.TELEGRAM_BOT_TOKEN;
 if (!token) throw new Error('TELEGRAM_BOT_TOKEN environment variable not found.');
 
 const bot = new Bot(token);
